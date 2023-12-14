@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,12 +10,16 @@ const Footer = () => {
         Made by Avez 💟
       </h2>
       <div>
-        <span className="text-white">
-          <LinkedInIcon />
-        </span>
-        <span className="text-white ml-1">
-          <TwitterIcon />
-        </span>
+        <Link to="https://www.linkedin.com/in/avez-khan-code/" target="_blank">
+          <span className="text-white">
+            <LinkedInIcon />
+          </span>
+        </Link>
+        <Link to="https://twitter.com/Aveziscoding" target="_blank">
+          <span className="text-white ml-1">
+            <TwitterIcon />
+          </span>
+        </Link>
       </div>
     </div>
   );
