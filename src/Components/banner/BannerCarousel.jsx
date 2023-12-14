@@ -8,6 +8,7 @@ const BannerCarousel = ({movie}) => {
           <img
             src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}
             `}
+
             className="h-[800px] bg-center bg-opacity-50 opacity-60 rounded-xl object-fit "
           />
         </div>
